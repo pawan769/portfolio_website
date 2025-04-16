@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Global Variables */
+:root {
+  --background: #ffffff;
+  --foreground: #2a2a34;
+  --button1: #cc3022;
+  --sun: #063073;
+  --heading: #cc3022;
+  --font-inter: var(--font-inter);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-button1: var(--button1);
+
+  --color-sun: var(--sun);
+  --color-heading: var(--heading);
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+html.dark {
+  --background: #1c1c22;
+  --foreground: #ededed;
+  --button1: #cc3022;
+  --sun: #eb9f12;
+  --heading: #b51010;
+  --font-inter: var(--font-inter);
+}
